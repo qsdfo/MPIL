@@ -1,0 +1,4 @@
+# Evaluation paresseuse
+
+Très bon, en anglais : http://typeocaml.com/2014/11/13/magic-of-thunk-lazy/
+En français : http://www.pps.univ-paris-diderot.fr/~treinen/teaching/pfav/cours/cours4.handout.pdf
