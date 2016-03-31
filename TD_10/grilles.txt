@@ -1,0 +1,46 @@
+(* ************************************************************************ *)
+(* Grilles										                    *)
+(* ************************************************************************ *)
+let test = [|
+   [| Some 5 ; None   ; None   ; Some 2 ; None   ; Some 4 ; None   ; None   ; None |];
+   [| None   ; None   ; None   ; None   ; Some 6 ; None   ; None   ; Some 8 ; None |];
+   [| Some 7 ; None   ; None   ; Some 5 ; None   ; Some 8 ; Some 4 ; Some 3 ; None |];
+   [| Some 1 ; Some 5 ; None   ; Some 6 ; None   ; None   ; Some 2 ; None   ; None |];
+   [| None   ; Some 6 ; Some 3 ; None   ; Some 2 ; None   ; Some 8 ; Some 1 ; None |];
+   [| None   ; None   ; Some 8 ; None   ; None   ; Some 3 ; None   ; Some 6 ; Some 9 |];
+   [| None   ; Some 9 ; Some 5 ; Some 3 ; None   ; Some 2 ; None   ; None   ; Some 1 |];
+   [| None   ; Some 1 ; None   ; None   ; Some 7 ; None   ; None   ; None   ; None |];
+   [| None   ; None   ; None   ; Some 9 ; None   ; Some 5 ; None   ; None   ; Some 8 |]|];;
+
+let test2 = [|
+   [| None   ; Some 4 ; None   ; None   ; Some 7 ; None   ; None   ; Some 3 ; None |];
+   [| None   ; None   ; Some 3 ; None   ; Some 8 ; Some 2 ; None   ; Some 1 ; None |];
+   [| None   ; None   ; None   ; None   ; None   ; None   ; Some 8 ; None   ; Some 2 |];
+   [| Some 9 ; Some 1 ; None   ; Some 6 ; Some 2 ; None   ; None   ; None   ; None |];
+   [| Some 8 ; None   ; None   ; None   ; None   ; None   ; None   ; None   ; Some 4 |];
+   [| None   ; None   ; None   ; None   ; Some 1 ; Some 5 ; None   ; Some 7 ; Some 9; |];
+   [| Some 3 ; None   ; Some 9 ; None   ; None   ; None   ; None   ; None   ; None |];
+   [|None    ; Some 8 ; None   ; Some 9 ; Some 4 ; None   ; Some 6 ; None   ; None  |];
+   [|None    ; Some 7 ; None   ; None   ; Some 6 ; None   ; None   ; Some 9 ; None |]|];;
+
+let difficult1 = [|
+   [| Some 7 ; None   ; None   ; None   ; None   ; None   ; Some 4 ; None   ; None |];
+   [| None   ; Some 2 ; None   ; None   ; Some 7 ; None   ; None   ; Some 8 ; None |];
+   [| None   ; None   ; Some 3 ; None   ; None   ; Some 8 ; None   ; None   ; Some 9 |];
+   [| None   ; None   ; None   ; Some 5 ; None   ; None   ; Some 3 ; None   ; None |];
+   [| None   ; Some 6 ; None   ; None   ; Some 2 ; None   ; None   ; Some 4 ; None |];
+   [| None   ; None   ; Some 1 ; None   ; None   ; Some 7 ; None   ; None   ; Some 6 |];
+   [| None   ; None   ; None   ; Some 3 ; None   ; None   ; Some 9 ; None   ; None |];
+   [| None   ; Some 3 ; None   ; None   ; Some 4 ; None   ; None   ; Some 6 ; None |];
+   [| None   ; None   ; Some 9 ; None   ; None   ; Some 1 ; None   ; None   ; Some 5 |]|];;
+
+let difficult2 = [|
+   [| None   ; None   ; None   ; Some 7 ; None   ; None   ; Some 8 ; None   ; None |];
+   [| None   ; None   ; None   ; None   ; Some 4 ; None   ; None   ; Some 3 ; None |];
+   [| None   ; None   ; None   ; None   ; None   ; Some 9 ; None   ; None   ; Some 1 |];
+   [| Some 6 ; None   ; None   ; Some 5 ; None   ; None   ; None   ; None   ; None |];
+   [| None   ; Some 1 ; None   ; None   ; Some 3 ; None   ; None   ; Some 4 ; None |];
+   [| None   ; None   ; Some 5 ; None   ; None   ; Some 1 ; None   ; None   ; Some 7 |];
+   [| Some 5 ; None   ; None   ; Some 2 ; None   ; None   ; Some 6 ; None   ; None |];
+   [| None   ; Some 3 ; None   ; None   ; Some 8 ; None   ; None   ; Some 9 ; None |];
+   [| None   ; None   ; Some 7 ; None   ; None   ; None   ; None   ; None   ; Some 2 |]|];;
